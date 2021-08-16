@@ -1,0 +1,442 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    -webkit-font-smoothing: antialiased;
+    background: black;
+    color: rgb(197, 193, 193);
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    margin: 0.5rem 0;
+}
+
+img {
+    width: 100%;
+}
+
+.main-page {
+    position: relative;
+    width: 100%;
+    height: 69vh;
+    background: url("../items/1.jpg") no-repeat center center/cover;
+}
+
+.main-page::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 100px 100px 150px black, inset -100px -100px 150px black;
+}
+
+.logo-sign {
+    position: relative;
+    z-index: 2;
+    height: 90px;
+}
+
+.logo {
+    width: 175px;
+    z-index: 2;
+    padding: 2rem 1rem;
+    display: inline-block;
+}
+
+.signIn-btn {
+    padding: 2rem 3rem;
+    display: block;
+    float: right;
+}
+
+.signIn-btn a:hover{
+    background: rgb(209, 68, 68);
+}
+
+.signIn-btn a {
+    font-family: 'Lato', sans-serif;
+    background-color: red;
+    padding: 0.6rem 1.1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 150;
+}
+
+.main-page-content {
+    position: relative;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8.5rem;
+    overflow: hidden;
+}
+
+.main-page-content h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+.cont-h1 {
+    width: 50%;
+    z-index: 2;
+}
+
+.main-page-content p {
+    font-size: 1.2rem;
+    z-index: 2;
+}
+
+.cont-h2, .cont-p {
+    margin: 14px 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.main-page-content h2 {
+    font-size: 1.5rem;
+    z-index: 2;
+    font-weight: lighter;
+}
+
+.membership-mail {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.membership-mail .mail input {
+    font-size: 1.5rem;
+    padding: 3px 4px;
+    height: 65px;
+    width: 550px;
+    /* border: 2px solid red; */
+}
+
+.membership-mail .getStarted {
+    padding: 0.9rem 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    height: 65px;
+    background-color: red;
+}
+
+.main-container-1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+    /* padding: 2rem 2rem */
+    height: auto;
+}
+
+.container-1 {
+    padding: 5rem 0;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.video-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content:center;
+    align-items: center;
+    border: 2px solid white;
+    box-shadow: 5px 5px rgb(241, 2, 2);
+    /* width: 291px;
+    height: 213px; */
+    width: fit-content;
+    height: fit-content;
+}
+
+.tv-text {
+    margin: 2rem 3rem;
+}
+
+.tv-text h1 {
+    font-size: 3rem;
+    line-height: 1.7;
+}
+
+.tv-text p, .dwn-text p {
+    font-size: 1.5rem;
+    line-height: 1.1;
+}
+
+.main-container-1 img {
+    height: 250px;
+}
+
+.main-container-1 .download {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.dwn-text h1 {
+    font-size: 3rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 55%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.que-box {
+    background-color: rgb(48, 48, 48);
+    margin: 8px 0;
+}
+
+.que-text {
+    font-size: 2rem;
+    text-align: left;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.ans {
+    font-size: 2rem;
+    text-align: left;
+    padding: 1rem;
+    display: none;
+}
+
+.q-box h1 {
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+.bottom-membership-mail {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* footer */
+
+.footer {
+    max-width: 75%;
+    margin: 1rem auto;
+    overflow: auto;
+}
+
+.footer a {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+.footer-cols ul li {
+    padding: 0.5rem;
+    /* line-height: 1.9; */
+}
+
+.footer-bottom {
+    margin-top: 5px 0;
+    font-size: 1.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    background-color: red;
+    border-radius: 5px;
+}
+
+.strip {
+    height: 8px;
+    width: 100%;
+    background-color: rgb(34, 34, 34);
+}
+
+.que-strip {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+}
+
+@media(max-width:500px) {
+    .main-page{
+        height: auto;
+    }
+    .logo{
+        width: 145px;
+        height: 120px;
+        padding: 1rem 1rem;
+    }
+    .signIn-btn {
+        padding: 1.3rem 0.8rem;
+    }
+
+    .signIn-btn a{
+        font-size:15px;
+        padding: 0.6rem 0.5rem;
+    }
+
+    .main-page-content {
+        margin-top: 3rem;
+    }
+    .main-page-content h1 {
+        font-size: 1.7rem;
+        line-height: 1.1;
+    }
+    .cont-h1 {
+        width: 95%;
+    }
+    .main-page-content p {
+        font-size: 1rem;
+    }
+    .cont-h2, .cont-p {
+        width: 95%;
+    }
+    .top-membership-mail .membership-mail {
+        margin-bottom: 2rem;
+    }
+
+    .membership-mail{
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    
+    .membership-mail .mail input {
+        font-size: 1rem;
+        padding: 3px 4px;
+        height: 55px;
+        width: 85vw;
+    }
+    
+    .membership-mail .getStarted {
+        padding: 0.9rem 1.5rem;
+        text-align: center;
+        font-size: 1rem;
+        height: 45px;
+        background-color: red;
+        margin-top: 1rem;
+        border-radius: 5px;
+    }
+    
+
+    .main-container-1{
+        height: auto;
+    }
+
+    .container-1{
+        grid-template-columns: 1fr;
+        padding: 3rem 0;
+    }
+
+    
+        .video-1 {
+            
+            border: none;
+            box-shadow:none;
+            /* width: 291px;
+            height: 213px; */
+            width: fit-content;
+            height: fit-content;
+        }
+    
+
+    .tv-text {
+        margin: 1rem 2rem;
+    }
+    .tv-text h1 {
+        font-size: 1.7rem;
+        line-height: 1.1;
+    }
+    .tv-text p, .dwn-text p {
+        font-size: 0.9rem;
+    }
+    .main-container-1 .download {
+        grid-template-columns: 1fr;
+    }
+    .dwn-text h1 {
+        font-size: 1.7rem;
+    }
+
+    .bottom-membership-mail .membership-mail{
+        margin-bottom:1rem;
+    }
+    .box {
+        max-width: 90%;
+    }
+
+    .q-box h1 {
+        font-size: 1.5rem;
+    }
+
+    .que-text {
+        font-size: 1rem;
+    }
+    
+    .ans {
+        font-size: 1rem;
+    }
+
+    .footer .footer-cols {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+
+    .res-center{
+        text-align: center;
+    }
+
+    .footer-bottom{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1rem;
+    }
+
+}
+
+.btn:hover{
+    background: rgb(194, 102, 102);
+}
+
